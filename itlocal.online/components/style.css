@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+#myVideo { 
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.posts {
+    font-size: 10px;
+    position: fixed;   
+    background: rgba(0, 0, 0, 0.5);
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    padding-right: 35px;
+    z-index: 20;
+    padding: 2px 15px;
+    margin: 5px;
+    position: fixed;
+    top: 120px;
+    float: left;
+}
+
+.posts1 {
+    float: left;
+    font-size: 13px;
+    padding: 2px 15px;
+    margin: 5px;
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    z-index: 90;
+    background-color: rgba(37, 36, 36, 0.24);
+}
+
+.heading {
+    text-align: right;
+    font-size: 10px;
+    position: fixed;   
+    background: rgba(0, 0, 0, 0.5);
+    color: #3cff00;
+    width: 100%;
+    padding-right: 35px;
+    z-index: 110;
+    position: fixed;
+    top: 20px;
+}
+
+
+.heading2 {
+    text-align: right;
+    font-size: 10px;
+    position: fixed;   
+    background: rgba(0, 0, 0, 0.5);
+    color: #3cff00;
+    width: 100%;
+    padding-right: 35px;
+    z-index: 110;
+    top: 40px;
+}
+
+.your_post {
+    text-align: center;
+    font-size: 10px;
+    position: fixed;   
+    background: rgba(0, 0, 0, 0.5);
+    color: #3cff00;
+    width: 100%;
+    padding-right: 35px;
+    z-index: 110;
+    top: 130px; 
+}
+
+.label {
+    font-size: 20px;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+.subm_post{
+    background-color: black;
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 10px;
+    z-index: 90; 
+}
+
+.subm_post:hover {
+    background-color: rgba(27, 26, 26, 0.712); 
+}
+
+#shadow{
+    background-color: rgba(1, 1, 1, 0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+}
+
+.regbtn {
+    background-color: black;
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 10px;
+    z-index: 90;
+    float: right;
+}
+
+.regbtn:hover {
+    background-color: rgba(27, 26, 26, 0.712); 
+}
+
+.profbtn {
+    background-color: black;
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 10px;
+    z-index: 90;
+    float: right;
+    margin: 0px 10px;
+}
+
+.profbtn:hover {
+    background-color: rgba(27, 26, 26, 0.712); 
+}
+
+#regarea {
+    width: 280px;
+    display: none;
+    height: 480px;
+    margin: 100px 20px 0px 550px;
+    background-color:rgba(27, 26, 26, 0.712);
+    border: #3cff00 solid 1px;
+    border-radius: 10px;
+    z-index: 150;
+    color: #3cff00;
+    position: fixed;
+    float: left;
+}
+
+
+.msg {
+    background-color:rgba(27, 26, 26, 0.712);
+    
+    border-radius: 10px;
+    z-index: 150;
+    color: #3cff00;
+    padding: 5px 5px;
+    margin: 12px;
+}
+
+.full_name{
+    font-size: 10px;
+    position: fixed;   
+    background: rgba(0, 0, 0, 0.5);
+    color: #3cff00;
+}
+
+.regnow {
+    background-color: rgba(27, 26, 26, 0.712);
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    z-index: 90;
+    text-decoration: none;
+}
+
+.regnow:hover {
+    background-color: black; 
+}
+
+.lognow {
+    background-color: rgba(27, 26, 26, 0.712);
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    z-index: 90;
+    text-decoration: none;  
+}
+
+.lognow:hover {
+    background-color: black; 
+}
+
+.quit {
+    background-color: black;
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    z-index: 90;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: right;
+}
+
+.quit:hover {
+    background-color: rgba(27, 26, 26, 0.712);  
+}
+
+.main {
+    background-color: black;
+    color: #3cff00;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    z-index: 90;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: right;
+}
+
+.main:hover {
+    background-color: rgba(27, 26, 26, 0.712);
+}
+
+.close{
+    margin: 10px 0px 0px 240px ;
+    cursor: pointer;
+    border: #3cff00 solid 1px;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.close:hover{   
+    background-color: black;
+}
+
+
+.reg{   
+    width: 265px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.input {    
+    width: 250px;
+    padding: 5px;
+    margin: 2px;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    background-color:rgba(27, 26, 26);
+    color: #3cff00;
+}
+
+.input:hover{
+    cursor: auto;
+    background-color: black;
+}
+
+.subm {    
+    width: 250px;
+    padding: 5px;
+    margin: 2px;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    background-color:rgba(27, 26, 26);
+    color: #3cff00;
+}
+
+.subm:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.input_post {    
+    width: 450px;
+    height: 400px;
+    padding: 5px;
+    margin: 2px;
+    border: #3cff00 solid 1px;
+    border-radius: 5px;
+    background-color:black;
+    color: #3cff00;
+}
+
+.input_post:hover{
+    cursor: auto;
+    background-color: rgba(27, 26, 26);
+}
+
+
+
