@@ -1,6 +1,6 @@
 <?php
+    session_start();
     require_once "core/connect.php";
-    require_once "core/func.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,17 +14,26 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 </head>
 <body>
-
+<div class = "content_block">
 <div class="heading">
-        <h1>It's ITlocal-social network to discuss programming and coding issues</h1>
+        <h1>It's ITlocal<br>site for registration and authorization</h1>
+
 <div>
-    <button class="regbtn" onclick="show('block')">Authorization/Registration</button>
-    <button onclick="window.location.href = 'core/profile.php';" class="profbtn">Profile</button>
-</div>
-</div>
+<?php
+if($_SESSION['user']) { 
+    echo 
+    '<a href=../core/profile.php><button class="profbtn">Profile</button></a>';
+}
+
+else{
+    print_r('<button class="regbtn" onclick="show' . "('block'" . ')">Authorization</button>');
+}
+?>    
 
 
-    
+   
+</div>
+</div>
     <div>   
         <video autoplay muted loop id="myVideo">
             <source src="/img/gsh.mp4" type="video/mp4">
@@ -32,8 +41,9 @@
         
     </div>
     
-    
-    <div onclick="show('none')" id="shadow"></div> 
+ 
+    <div onclick="show('none')" id="shadow"></div>
+<div class="form">   
 <center><div id="regarea">
     <img onclick="show('none')" class="close" src="/img/close.png" alt="">
 
@@ -50,20 +60,12 @@
             unset($_SESSION['message']);
             ?>
         <p>Do not have an account?  
-        <center><a href = "/reg.php" class="regnow">Register now. </a></center></p> 
+        <center><a href = "reg.php" class="regnow">Register now. </a></center></p> 
     </form>
 
 </center></div>
-<div>
-<div class="posts">
-                <?php $posts = get_info(); ?>
-                <?php foreach($posts as $post): ?>
-                <h2><?=$post['content']?> </h2>
-</div>     
-<?php endforeach; ?>
+</div> 
 </div>
-
-
     <script>
             function show(state)
             {
@@ -71,8 +73,6 @@
             document.getElementById('shadow').style.display = state;
             }	
     </script>
-<?php
-    
-?>
+
 </body>
 </html>

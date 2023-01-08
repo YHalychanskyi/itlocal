@@ -2,7 +2,7 @@
     session_start();
     if ($_SESSION['user']) {
         header('Location:../profile.php');
-    } 
+    }
 ?>
 
 <!DOCTYPE html>
@@ -19,10 +19,17 @@
 </head>
 <body>
 <div class="heading">   
-        <h1>It's ITlocal-social network to discuss programming and coding issues</h1>
+        <h1>It's ITlocal<br>site for registration and authorization</h1>
 <div>
-    <button class="regbtn" onclick="show('block')">Authorization/Registration</button>
-    <button onclick="window.location.href = 'core/profile.php';" class="profbtn">Profile</button>
+<button class="regbtn" onclick="show('block')">Registration</button> 
+
+<?php
+if($_SESSION['user']) { 
+    echo 
+    '<a href=../core/profile.php><button class="profbtn">Profile</button></a>';
+}
+?>
+
 </div>
 </div>  
     <div>
