@@ -19,7 +19,6 @@
     mysqli_query($connect, "INSERT INTO `data` 
     (`id`, `fname`, `lname`, `email`, `pass`, `tel`) 
     VALUES (NULL, '$fname', '$lname', '$email', '$pass', '$tel')");
-    $_SESSION['message'] = 'Registeration success';
     header('Location: ../index.php');
 
 

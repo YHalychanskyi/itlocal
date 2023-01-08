@@ -26,18 +26,13 @@ if (!$_SESSION['user']) {
         </video>
     </div>
 
-<center><div class="your_post">
-    <label class="label">Write your text here</label>
-    <form action="posts.php" method="post">
-        <textarea type="text" placeholder="Write here." name="content" class="input_post" autocomplete="off"></textarea><br>
-        <input type="submit" value="Publish a post" name="sabp" class="subm_post">
-    </form>
-</center></div>
 
     <div class="heading2">
         
-        <a href="../index.php" class="main">Home page</a>       <a href="logout.php" class="quit">Quit from account</a>
+        
         <h2><?= $_SESSION['user']['fname'] ?> <?= $_SESSION['user']['lname'] ?></h2>
+        <a href="../index.php" class="main">Home page</a>       
+        <a href="logout.php" class="quit">Quit from account</a>
     </div>
 
 </body>
