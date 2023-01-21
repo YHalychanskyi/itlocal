@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html {
+    --color--text: white;
+}
+
 #myVideo { 
     position: fixed;
     right: 0;
@@ -22,15 +26,15 @@
 }
 .heading {
     text-align: center;
-    font-size: 10px;
+    font-size: 9px;
     position: fixed;   
     background: rgba(0, 0, 0, 0.5);
-    color: #3cff00;
+    color: var(--color--text);
     width: 100%;
-    padding-right: 35px;
+    right: 0;
     z-index: 110;
-    position: fixed;
-    top: 20px;
+    top: 10px;
+    height: 102px;
 }
 
 
@@ -39,7 +43,7 @@
     font-size: 10px;
     position: fixed;   
     background: rgba(0, 0, 0, 0.5);
-    color: #3cff00;
+    color: var(--color--text);
     width: 100%;
     padding-right: 35px;
     z-index: 110;
@@ -48,7 +52,7 @@
 
 .label {
     font-size: 20px;
-    border: #3cff00 solid 1px;
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     padding: 7px 10px;
 }
@@ -66,12 +70,13 @@
 
 .regbtn {
     background-color: black;
-    color: #3cff00;
-    border: #3cff00 solid 1px;
+    color: var(--color--text);
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 10px;
     z-index: 90;
+    height:32px;
 }
 
 .regbtn:hover {
@@ -80,8 +85,8 @@
 
 .profbtn {
     background-color: black;
-    color: #3cff00;
-    border: #3cff00 solid 1px;
+    color: var(--color--text);
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 10px;
@@ -94,7 +99,6 @@
     background-color: rgba(27, 26, 26, 0.712); 
 }
 
-
 #regarea {
     width: 270px;
     min-width: 150px;
@@ -102,10 +106,10 @@
     display: none;
     height: 400px;
     background-color:rgba(27, 26, 26, 0.712);
-    border: #3cff00 solid 1px;
+    border: var(--color--text) solid 1px;
     border-radius: 10px;
     z-index: 150;
-    color: #3cff00;
+    color: var(--color--text);
     top: 0;
     left: 0;
     bottom: 0;
@@ -118,10 +122,10 @@
     min-width: 150px;
     padding: 5px;
     margin: 2px;
-    border: #3cff00 solid 1px;
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     background-color:rgba(27, 26, 26);
-    color: #3cff00;
+    color: var(--color--text);
 }
 
 .input:hover{
@@ -134,10 +138,10 @@
     min-width: 150px;
     padding: 5px;
     margin: 2px;
-    border: #3cff00 solid 1px;
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     background-color:rgba(27, 26, 26);
-    color: #3cff00;
+    color: var(--color--text);
 }
 
 .subm:hover{
@@ -150,22 +154,26 @@
     background-color:rgba(27, 26, 26, 0.712);
     border-radius: 10px;
     z-index: 150;
-    color: #3cff00;
+    color: var(--color--text);
     padding: 5px 5px;
     margin: 12px;
+    font-size: 17px;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
 }
 
 .full_name{
     font-size: 10px;
     position: fixed;   
     background: rgba(0, 0, 0, 0.5);
-    color: #3cff00;
+    color: var(--color--text);
 }
 
 .regnow {
     background-color: rgba(27, 26, 26, 0.712);
-    color: #3cff00;
-    border: #3cff00 solid 1px;
+    color: var(--color--text);
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     cursor: pointer;
     padding: 5px 5px;
@@ -179,8 +187,8 @@
 
 .lognow {
     background-color: rgba(27, 26, 26, 0.712);
-    color: #3cff00;
-    border: #3cff00 solid 1px;
+    color: var(--color--text);
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     cursor: pointer;
     padding: 5px 5px;
@@ -194,8 +202,8 @@
 
 .quit {
     background-color: black;
-    color: #3cff00;
-    border: #3cff00 solid 1px;
+    color: var(--color--text);
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     cursor: pointer;
     padding: 5px 5px;
@@ -211,8 +219,8 @@
 
 .main {
     background-color: black;
-    color: #3cff00;
-    border: #3cff00 solid 1px;
+    color: var(--color--text);
+    border: var(--color--text) solid 1px;
     border-radius: 5px;
     cursor: pointer;
     padding: 5px 5px;
@@ -229,7 +237,7 @@
 .close{
     margin: 10px 0px 0px 240px;
     cursor: pointer;
-    border: #3cff00 solid 1px;
+    border: var(--color--text) solid 1px;
     border-radius: 3px;
     padding: 2px;
 }
