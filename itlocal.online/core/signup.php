@@ -20,7 +20,9 @@
     (`id`, `fname`, `lname`, `email`, `pass`, `tel`) 
     VALUES (NULL, '$fname', '$lname', '$email', '$pass', '$tel')");
     header('Location: ../index.php');
-
+    
+    $_SESSION['message'] = 'You successfully registered';
+    header('Location: ../index.php');
 
     } else {
         $_SESSION['message'] = 'Passwords do not match';
